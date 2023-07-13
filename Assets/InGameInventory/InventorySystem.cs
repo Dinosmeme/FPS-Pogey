@@ -27,6 +27,8 @@ public class InventorySystem : MonoBehaviour
 
     }
 
+    public event Action onInventoryChangedEvent;
+
     private void Awake()
     {
         inventory = new List<InventoryItem>(); // This missed line stopped my progress for a week LMAO
@@ -65,10 +67,10 @@ public class InventorySystem : MonoBehaviour
         else
         {
             InventoryItem newItem = new InventoryItem(referenceData);
-            // print($"newInventoryEntrance {newItem.data}////");
             inventory.Add(newItem);
             m_itemDictionary.Add(referenceData, newItem);
         }
+        onInventoryChangedEvent?.Invoke();
     }
 
     public void Remove(InventoryItemData referenceData)
