@@ -12,3 +12,14 @@
 
  Second reasoning was that I'm to lazy to implement DRP myself, so I used free Unity Package
 
+
+
+# Currently working on
+
+- Fully working inventory system (Take item -> Add in inventory -> select item from inventory -> use item)
+
+## Next in line
+
+- Item functionality
+
+- Enemy AI
