@@ -71,7 +71,7 @@ MonoBehaviour:
   willSlideOnSlopes: 1
   canZoom: 1
   canInteract: 1
-  useFootsteps: 1
+  useFootsteps: 0
   canRegenerate: 1
   useStamina: 1
   sprintKey: 304
@@ -119,7 +119,7 @@ MonoBehaviour:
   metalClips: []
   grassClips: []
   interactionRayPoint: {x: 0.5, y: 0.5, z: 0}
-  interactionDistance: 2
+  interactionDistance: 10
   interactionLayer:
     serializedVersion: 2
     m_Bits: 128
