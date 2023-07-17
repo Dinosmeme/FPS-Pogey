@@ -15,6 +15,7 @@ public class InvetorySlot : MonoBehaviour
 
     public void Set(InventorySystem.InventoryItem item) // TODO: remove InventoryItem Class from InventorySystem (if possible)
     {
+        print(item.data.displayName);
         m_icon.sprite = item.data.icon;
         m_label.text = item.data.displayName;
         if (item.stackSize <= 1)

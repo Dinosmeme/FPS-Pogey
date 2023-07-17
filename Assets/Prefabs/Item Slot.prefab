@@ -475,7 +475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 872dee7b7161d0b4690ce7ee80183988, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_icon: {fileID: 0}
-  m_label: {fileID: 0}
-  m_stackObj: {fileID: 0}
-  m_stackLabel: {fileID: 0}
+  m_icon: {fileID: 2339399494824761813}
+  m_label: {fileID: 6368437617037930500}
+  m_stackObj: {fileID: 2629354934303786050}
+  m_stackLabel: {fileID: 3058993527846395991}

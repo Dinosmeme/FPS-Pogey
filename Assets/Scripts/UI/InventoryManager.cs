@@ -9,7 +9,7 @@ public class InventoryManager : MonoBehaviour
 
     public void Start()
     {
-        InventorySystem.instance.onInventoryChangedEvent += OnUpdateInventory;
+        InventorySystem.onInventoryChangedEvent += OnUpdateInventory;
     }
 
     private void OnUpdateInventory()

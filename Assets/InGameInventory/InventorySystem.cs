@@ -11,6 +11,8 @@ public class InventorySystem : MonoBehaviour
     private Dictionary<InventoryItemData, InventoryItem> m_itemDictionary;
     public List<InventoryItem> inventory { get; private set; }
 
+    public static event Action onInventoryChangedEvent;
+
     void Start()
     {
         
@@ -26,8 +28,6 @@ public class InventorySystem : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
     }
-
-    public event Action onInventoryChangedEvent;
 
     private void Awake()
     {
@@ -85,6 +85,7 @@ public class InventorySystem : MonoBehaviour
                 m_itemDictionary.Remove(referenceData);
             }
         }
+        onInventoryChangedEvent?.Invoke();
     }
 
     public InventoryItem Get(InventoryItemData referenceData)
